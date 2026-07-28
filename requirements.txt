@@ -1,0 +1,6 @@
+pandas
+jupyterlab
+ipykernel
+duckdb
+dbt-duckdb
+psycopg2-binary

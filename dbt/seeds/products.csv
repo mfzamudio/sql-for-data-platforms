@@ -1,0 +1,21 @@
+id,name,category,price,stock_quantity
+1,Wireless Headphones,Electronics,129.99,45
+2,Laptop Stand,Electronics,49.99,80
+3,USB-C Hub,Electronics,39.99,120
+4,Smartwatch,Electronics,299.99,25
+5,Running Jacket,Clothing,89.99,60
+6,Yoga Pants,Clothing,54.99,90
+7,Wool Sweater,Clothing,75.00,40
+8,Denim Jeans,Clothing,69.99,75
+9,Organic Coffee 1kg,Food,24.99,200
+10,Green Tea 100g,Food,14.99,300
+11,Protein Bars x12,Food,34.99,150
+12,Olive Oil 500ml,Food,19.99,250
+13,Python Programming,Books,44.99,55
+14,Data Science Handbook,Books,54.99,40
+15,SQL for Beginners,Books,29.99,70
+16,Machine Learning A-Z,Books,49.99,35
+17,Yoga Mat,Sports,49.99,65
+18,Resistance Bands Set,Sports,29.99,100
+19,Kettlebell 16kg,Sports,79.99,30
+20,Running Shoes,Sports,139.99,20

@@ -1,0 +1,26 @@
+id,name,email,city,membership_level,created_date
+1,Alice Martin,alice.martin@gmail.com,Toronto,premium,2022-03-15
+2,Bob Chen,bob.chen@yahoo.com,Vancouver,basic,2022-05-20
+3,Carol White,carol.white@gmail.com,Montreal,vip,2022-07-10
+4,David Lee,david.lee@hotmail.com,Calgary,basic,2022-09-01
+5,Emma Davis,emma.davis@gmail.com,Ottawa,premium,2022-11-15
+6,Frank Torres,frank.torres@outlook.com,Toronto,basic,2023-01-08
+7,Grace Kim,grace.kim@gmail.com,Vancouver,vip,2023-02-20
+8,Henry Brown,henry.brown@yahoo.com,Montreal,basic,2023-03-12
+9,Isabel Santos,isabel.santos@gmail.com,Toronto,premium,2023-04-05
+10,James Wilson,james.wilson@hotmail.com,Calgary,basic,2023-05-18
+11,Karen Taylor,karen.taylor@gmail.com,Ottawa,premium,2023-06-22
+12,Liam Johnson,liam.johnson@outlook.com,Toronto,vip,2023-07-30
+13,Maria Garcia,maria.garcia@gmail.com,Montreal,basic,2023-08-14
+14,Nathan Park,nathan.park@yahoo.com,Vancouver,premium,2023-09-09
+15,Olivia Patel,olivia.patel@gmail.com,Toronto,basic,2023-10-01
+16,Patrick Murphy,patrick.murphy@hotmail.com,Calgary,basic,2023-11-11
+17,Quinn Adams,quinn.adams@gmail.com,Ottawa,premium,2023-12-05
+18,Rachel Scott,rachel.scott@outlook.com,Toronto,basic,2024-01-18
+19,Samuel Nguyen,samuel.nguyen@gmail.com,Vancouver,vip,2024-02-28
+20,Tanya Roberts,tanya.roberts@yahoo.com,Montreal,basic,2024-03-15
+21,Umar Ali,umar.ali@gmail.com,Toronto,premium,2024-04-20
+22,Vera Kozlov,vera.kozlov@hotmail.com,Calgary,basic,2024-05-30
+23,Walter Bell,walter.bell@gmail.com,Ottawa,basic,2024-07-10
+24,Xena Cruz,xena.cruz@yahoo.com,Vancouver,basic,2024-09-01
+25,Yuki Tanaka,yuki.tanaka@gmail.com,Montreal,basic,2024-11-15

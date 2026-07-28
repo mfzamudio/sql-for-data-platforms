@@ -1,0 +1,82 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "One row per customer. Light renaming/casting from the customers seed."
+    columns:
+      - name: customer_id
+        description: "Primary key."
+        tests:
+          - unique
+          - not_null
+      - name: email
+        tests:
+          - unique
+          - not_null
+      - name: membership_level
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['basic', 'premium', 'vip']
+
+  - name: stg_products
+    description: "One row per product. Light renaming/casting from the products seed."
+    columns:
+      - name: product_id
+        description: "Primary key."
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_employees
+    description: "One row per employee. Light renaming/casting from the employees seed."
+    columns:
+      - name: employee_id
+        description: "Primary key."
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    description: "One row per order. Light renaming/casting from the orders seed, plus an is_terminal_status flag computed via the is_terminal_status() macro."
+    columns:
+      - name: order_id
+        description: "Primary key."
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['pending', 'shipped', 'delivered', 'cancelled']
+
+  - name: stg_order_items
+    description: "One row per order line item. Light renaming/casting plus a computed line_total (quantity * unit_price)."
+    columns:
+      - name: order_item_id
+        description: "Primary key."
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_orders')
+                field: order_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_products')
+                field: product_id

@@ -1,0 +1,42 @@
+version: 2
+
+seeds:
+  - name: customers
+    description: "Raw customer data. Same synthetic 'Store' dataset used in the Part 1-3 SQLite notebooks."
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+
+  - name: products
+    description: "Raw product catalog."
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+
+  - name: employees
+    description: "Raw employee data."
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+
+  - name: orders
+    description: "Raw order headers."
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+
+  - name: order_items
+    description: "Raw order line items."
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null

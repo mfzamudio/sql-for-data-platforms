@@ -1,0 +1,16 @@
+id,name,department,hire_date,salary
+1,Alice Foster,Sales,2019-03-15,68000.00
+2,Bob Martinez,Sales,2020-06-01,72000.00
+3,Carol Hughes,Sales,2021-09-10,72000.00
+4,David Okafor,Sales,2022-11-20,58000.00
+5,Eva Schneider,Engineering,2019-01-15,95000.00
+6,Frank Liu,Engineering,2020-04-20,105000.00
+7,Grace Patel,Engineering,2021-07-01,112000.00
+8,Hugo Silva,Engineering,2022-02-15,95000.00
+9,Iris Nakamura,Engineering,2023-08-01,85000.00
+10,Jake Thompson,Marketing,2019-11-01,62000.00
+11,Kim Anderson,Marketing,2021-04-15,70000.00
+12,Leo Ferreira,Marketing,2023-01-10,62000.00
+13,Mia Campbell,HR,2020-08-20,55000.00
+14,Noa Rosenberg,HR,2021-12-05,60000.00
+15,Omar Diallo,HR,2022-05-18,55000.00

@@ -1,0 +1,24 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# dbt
+*.duckdb
+dbt/logs/
+dbt/target/
+dbt/dbt_packages/
+
+# Docker Postgres (Module 11)
+docker/pgdata/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large/raw data
+**/data/raw/
+**/*.parquet

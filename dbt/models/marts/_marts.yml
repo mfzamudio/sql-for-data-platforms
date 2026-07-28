@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: fct_order_items
+    description: >
+      Grain: one row per order line item. Denormalizes stg_order_items with
+      order, customer and product attributes for easy slicing.
+    columns:
+      - name: order_item_id
+        description: "Primary key."
+        tests:
+          - unique
+          - not_null
+      - name: line_total
+        tests:
+          - not_null
+
+  - name: customer_order_summary
+    description: >
+      Grain: one row per customer with an order. Aggregates order count and
+      spend from fct_order_items, plus a spend_rank window function
+      (highest spender = rank 1). Customers with zero orders (23, 24, 25)
+      do not appear here.
+    columns:
+      - name: customer_id
+        description: "Primary key."
+        tests:
+          - unique
+          - not_null
+      - name: spend_rank
+        tests:
+          - not_null
+
+  - name: incremental_orders
+    description: >
+      Grain: one row per order. Incremental materialization (unique_key=order_id) --
+      the production version of Part 8's watermark pattern: after the first full-build
+      run, subsequent runs only pull orders newer than max(order_date) already in the
+      table, instead of rebuilding from scratch.
+    columns:
+      - name: order_id
+        description: "Primary key."
+        tests:
+          - unique
+          - not_null

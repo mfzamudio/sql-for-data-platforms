@@ -1,0 +1,11 @@
+# Self-contained profile: lives inside the project so the notebook can point
+# DBT_PROFILES_DIR here instead of touching the user's global ~/.dbt/profiles.yml.
+# In a real environment this file normally lives outside the repo (or secrets
+# are injected via env vars) since it can hold warehouse credentials.
+sql_for_data_platforms:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: dbt.duckdb
+      threads: 4
